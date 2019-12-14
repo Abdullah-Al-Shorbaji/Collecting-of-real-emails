@@ -43,9 +43,9 @@ if(isset($_POST["add_email"]))
 		$mail->SMTPSecure = 'tls';
 		$mail->Port = 587;
 
-		$mail->setFrom(smpt_user, "Abdullah Al-Shorbaji");
+		$mail->setFrom(smpt_user, " ");
 		$mail->addAddress($_POST["email_to_add"], "New email owner");     // Add a recipient
-		$mail->addReplyTo(smpt_user, "Abdullah Al-Shorbaji");
+		$mail->addReplyTo(smpt_user, " ");
 		$mail->isHTML(true);                                  // Set email format to HTML
 
 		$mail->Subject = "Confirmation code to validate your email";
